@@ -1,0 +1,7 @@
+/*Resets*/
+a {text-decoration:none!important;}
+ul{list-style-type:none!important;}
+
+/*Cabeçalho*/
+nav ul{display:flex;}
+#toggle {display:none;}
