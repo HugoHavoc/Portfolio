@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inicital-scale=1">
         <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/principal.css">
+        <link rel="shortcut icon" href="assets/icons/favicon.png" />  
         <title>Hugo Costa - Front-end</title>
     </head>
     <body>
-        <main>
-            <section id="inicio">
-                <header>
+        <main><!--Main-->
+            <section id="inicio"><!--Conteudo Inicial-->
+                <header><!--Cabeçalho-->
                     <div class="logo">
                         <a href="#inicio"><h1>Hugo Costa</h1></a>
                     </div>
-                    <nav>
+                    <nav><!--Menu-->
                         <input type="checkbox" id="toggle">
                         <label for="toogle">
                             <ul>
@@ -23,17 +26,17 @@
                                 <li><a href="#contato">Contato</a></li>
                             </ul>
                         </label>
-                    </nav>
-                </header>
-                <video autoplay loop poster="assets/imgs/bgVideo.png">
+                    </nav><!--Fim do menu-->
+                </header><!--Fim do cabeçalho-->
+                <video autoplay loop poster="assets/imgs/bgVideo.png"><!--Video do Início-->
                     <source src="assets/videos/videoCode.mp4">
                 </video>
                 <div class="cont-inicio">
                     <h1>Hugo Costa</h1>
                     <h1>Desenvolvedor Front-End</h1>
                 </div>
-            </section>
-            <section id="sobre">
+            </section><!--Fim do início-->
+            <section id="sobre"><!--Seção Sobre-->
                 <div class="container">
                     <h1 class="text-center">Sobre</h1>
                     <article>
@@ -41,10 +44,80 @@
                         <p class="text-center">Olá! Meu nome é Hugo Costa, moro em Recife-PE, estudo Análise de Desenvolvimento de Sistema no ETEPAM e sou desenvolvedor Front-end desde de 2018. Adquiri boa parte da minha experiência fazendo implementação e manutenção de sites.<br>Sou apaixonado pelos desafios que a tecnologia proporciona e tenho extremo interesse na busca de conhecimento na área</p>
                     </article>
                 </div>
-            </section>
-            <section id="portfolio">
-            </section>
-            <section id="contato">
+            </section><!--Fim seção sobre-->
+            <section id="portfolio"><!--Seção Portfolio-->
+                <div class="container">
+                    <h1 class="text-center">Portfólio</h1>
+                    <article>
+                        <ul class="list-unstyled"><!--Conteudo portfolio-->
+                            <li><!--LI/Botão para o modal-->
+                                <a href="" data-target="#escola" data-toggle="modal">
+                                    <img src="assets/imgs/escolapequena.jpg" data-toggle="tooltip" data-placement="top" title="Clique para saber mais">
+                                </a>
+                            </li><!--Fim do botão para o modal-->
+                            <li><!--LI/Botão para o modal-->
+                                <a href="" data-target="#all4" data-toggle="modal">
+                                    <img src="assets/imgs/escolapequena.jpg" data-toggle="tooltip" data-placement="top" title="Clique para saber mais">
+                                </a>
+                            </li><!--Fim do botão para o modal-->
+                            <li><!--LI/Botão para o modal-->
+                                <a href="" data-target="#hbr" data-toggle="modal">
+                                    <img src="assets/imgs/escolapequena.jpg" data-toggle="tooltip" data-placement="top" title="Clique para saber mais">
+                                </a>
+                            </li><!--Fim do botão para o modal-->
+                            <div class="modal fade" id="escola"><!--Modal-->
+                                <div class="modal-dialog modal-dialog-centered modal-lg"><!--Caixa de dialogo escura-->
+                                    <div class="modal-content"><!--Conteudo do modal-->
+                                        <div class="modal-header"><!--Cabeçalho modal-->
+                                            <h1>Site da Escola Bem-Me-Quer</h1>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
+                                        </div><!--Fim do cabeçalho do modal-->
+                                        <div class="modal-body"><!--Corpo do modal-->
+                                            <img class="img-fluid" src="assets/imgs/escola.jpg" alt="">
+                                            <ul class="list-unstyled">
+                                                <li><span>Link: </span><a href="http://www.escolabemmequer.com/" target="_blank">www.escolabemmequer.com</a></li>
+                                            </ul>
+                                        </div><!--Fim do corpo do modal-->
+                                    </div>
+                                </div>
+                            </div><!--Fim modal-->
+                            <div class="modal fade" id="all4"><!--Modal-->
+                                <div class="modal-dialog modal-dialog-centered modal-lg"><!--Caixa de dialogo escura-->
+                                    <div class="modal-content"><!--Conteudo do modal-->
+                                        <div class="modal-header"><!--Cabeçalho modal-->
+                                            <h1>Site da Escola Bem-Me-Quer</h1>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
+                                        </div><!--Fim do cabeçalho do modal-->
+                                        <div class="modal-body"><!--Corpo do modal-->
+                                            <img class="img-fluid" src="assets/imgs/escola.jpg" alt="">
+                                            <ul class="list-unstyled">
+                                                <li><span>Link: </span><a href="http://www.escolabemmequer.com/" target="_blank">www.escolabemmequer.com</a></li>
+                                            </ul>
+                                        </div><!--Fim do corpo do modal-->
+                                    </div>
+                                </div>
+                            </div><!--Fim modal-->
+                            <div class="modal fade" id="hbr"><!--Modal-->
+                                <div class="modal-dialog modal-dialog-centered modal-lg"><!--Caixa de dialogo escura-->
+                                    <div class="modal-content"><!--Conteudo do modal-->
+                                        <div class="modal-header"><!--Cabeçalho modal-->
+                                            <h1>Site da Escola Bem-Me-Quer</h1>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
+                                        </div><!--Fim do cabeçalho do modal-->
+                                        <div class="modal-body"><!--Corpo do modal-->
+                                            <img class="img-fluid" src="assets/imgs/escola.jpg" alt="">
+                                            <ul class="list-unstyled">
+                                                <li><span>Link: </span><a href="http://www.escolabemmequer.com/" target="_blank">www.escolabemmequer.com</a></li>
+                                            </ul>
+                                        </div><!--Fim do corpo do modal-->
+                                    </div>
+                                </div>
+                            </div><!--Fim modal-->
+                        </ul><!--Fim contaudo Portfolio-->
+                    </article>
+                </div>
+            </section><!--Fim seção porftolio-->
+            <section id="contato"><!--Seção Contato-->
                 <div class="container">
                     <h1 class="text-center">Contato</h1>
                     <article class="container">
@@ -70,9 +143,9 @@
                         </ul>
                     </article>
                 </div>
-            </section>
+            </section><!--Fim da seção Contato-->
         </main>
-        <footer>
+        <footer><!--Rodapé-->
             <small class="font-weight-bold">© Copyright 2019 - Hugo Costa - Todos direitos reservados</small>
         </footer>
         <!--Bootstrap-->
