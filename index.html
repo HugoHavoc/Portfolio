@@ -15,16 +15,16 @@
             <section id="inicio" class="inicio"><!--Conteudo Inicial-->
                 <header class="cabecalho"><!--Cabeçalho-->
                     <div class="logo">
-                        <a href="#inicio"><h1>Hugo Costa</h1></a>
+                        <a class="scroll" href="#inicio"><h1>Hugo Costa</h1></a>
                     </div>
                     <nav><!--Menu-->
                         <label for="toggle">&#9776;</label>
                         <input type="checkbox" id="toggle">
                         <div class="menu">
                             <ul>
-                                <li><a  href="#sobre">Sobre</a></li>
-                                <li><a  href="#portfolio">Portfólio</a></li>
-                                <li><a  href="#contato">Contato</a></li>
+                                <li><a class="scroll" href="#sobre">Sobre</a></li>
+                                <li><a class="scroll"  href="#portfolio">Portfólio</a></li>
+                                <li><a class="scroll" href="#contato">Contato</a></li>
                             </ul>
                         </div>
                     </nav><!--Fim do menu-->
@@ -153,20 +153,10 @@
             <small class="font-weight-bold">© Copyright 2019 - Hugo Costa - Todos direitos reservados</small>
         </footer>
         <!--Bootstrap-->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="assets/js/jquery-3.4.1.min.js" ></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/all.min.js"></script>
         <script type="text/javascript" src="assets/js/script.js"></script>
-
-        <script>
-            jQuery(document).ready(function($) {
-             $(".scroll").click(function(event){
-              event.preventDefault();
-              $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
-             });
-            });
-           </script>
-
     </body>
 </html>
