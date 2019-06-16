@@ -13,7 +13,7 @@
     <body>
         <main><!--Main-->
             <section id="inicio"><!--Conteudo Inicial-->
-                <header><!--Cabeçalho-->
+                <header class="cabecalho"><!--Cabeçalho-->
                     <div class="logo">
                         <a href="#inicio"><h1>Hugo Costa</h1></a>
                     </div>
@@ -32,13 +32,16 @@
                     <source src="assets/videos/videoCode.mp4">
                 </video>
                 <div class="cont-inicio">
-                    <h1>Hugo Costa</h1>
-                    <h1>Desenvolvedor Front-End</h1>
+                    <h1 class="title">Hugo Costa</h1>
+                    <h1 class="title">Desenvolvedor Front-End</h1>
+                </div>
+                <div class="mouse">
+                    <span></span>
                 </div>
             </section><!--Fim do início-->
             <section id="sobre"><!--Seção Sobre-->
                 <div class="container">
-                    <h1 class="text-center">Sobre</h1>
+                    <h1 class="title text-center upper">Sobre</h1>
                     <article>
                         <img class="img-fluid" src="assets/imgs/hugo.png" alt="">
                         <p class="text-center">Olá! Meu nome é Hugo Costa, moro em Recife-PE, estudo Análise de Desenvolvimento de Sistema no ETEPAM e sou desenvolvedor Front-end desde de 2018. Adquiri boa parte da minha experiência fazendo implementação e manutenção de sites.<br>Sou apaixonado pelos desafios que a tecnologia proporciona e tenho extremo interesse na busca de conhecimento na área</p>
@@ -46,68 +49,68 @@
                 </div>
             </section><!--Fim seção sobre-->
             <section id="portfolio"><!--Seção Portfolio-->
-                <div class="container">
-                    <h1 class="text-center">Portfólio</h1>
+                <div class="container-fluid">
+                    <h1 id="pt" class="title text-center upper">Portfólio</h1>
                     <article>
                         <ul class="list-unstyled"><!--Conteudo portfolio-->
                             <li><!--LI/Botão para o modal-->
                                 <a href="" data-target="#escola" data-toggle="modal">
-                                    <img src="assets/imgs/escolapequena.jpg" data-toggle="tooltip" data-placement="top" title="Clique para saber mais">
+                                    <img class="img-fluid" src="assets/imgs/escolamin.jpg" data-toggle="tooltip" data-placement="top" title="Clique para saber mais">
                                 </a>
                             </li><!--Fim do botão para o modal-->
                             <li><!--LI/Botão para o modal-->
                                 <a href="" data-target="#all4" data-toggle="modal">
-                                    <img src="assets/imgs/escolapequena.jpg" data-toggle="tooltip" data-placement="top" title="Clique para saber mais">
+                                    <img  class="img-fluid" src="assets/imgs/all4min.jpg" data-toggle="tooltip" data-placement="top" title="Clique para saber mais">
                                 </a>
                             </li><!--Fim do botão para o modal-->
                             <li><!--LI/Botão para o modal-->
                                 <a href="" data-target="#hbr" data-toggle="modal">
-                                    <img src="assets/imgs/escolapequena.jpg" data-toggle="tooltip" data-placement="top" title="Clique para saber mais">
+                                    <img  class="img-fluid" src="assets/imgs/hbrmin.jpg" data-toggle="tooltip" data-placement="top" title="Clique para saber mais">
                                 </a>
                             </li><!--Fim do botão para o modal-->
                             <div class="modal fade" id="escola"><!--Modal-->
-                                <div class="modal-dialog modal-dialog-centered modal-lg"><!--Caixa de dialogo escura-->
+                                <div class="modal-dialog  modal-lg"><!--Caixa de dialogo escura-->
                                     <div class="modal-content"><!--Conteudo do modal-->
                                         <div class="modal-header"><!--Cabeçalho modal-->
-                                            <h1>Site da Escola Bem-Me-Quer</h1>
+                                            <h2 class="title text-center upper title-modal">Site da Escola Bem-Me-Quer</h1>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
                                         </div><!--Fim do cabeçalho do modal-->
                                         <div class="modal-body"><!--Corpo do modal-->
                                             <img class="img-fluid" src="assets/imgs/escola.jpg" alt="">
                                             <ul class="list-unstyled">
-                                                <li><span>Link: </span><a href="http://www.escolabemmequer.com/" target="_blank">www.escolabemmequer.com</a></li>
+                                                <li><span>Veja mais em: </span><a href="http://www.escolabemmequer.com/" target="_blank">www.escolabemmequer.com</a></li>
                                             </ul>
                                         </div><!--Fim do corpo do modal-->
                                     </div>
                                 </div>
                             </div><!--Fim modal-->
                             <div class="modal fade" id="all4"><!--Modal-->
-                                <div class="modal-dialog modal-dialog-centered modal-lg"><!--Caixa de dialogo escura-->
+                                <div class="modal-dialog  modal-lg"><!--Caixa de dialogo escura-->
                                     <div class="modal-content"><!--Conteudo do modal-->
                                         <div class="modal-header"><!--Cabeçalho modal-->
-                                            <h1>Site da Escola Bem-Me-Quer</h1>
+                                            <h2 class="title text-center upper title-modal">Site da Escola All4Kids</h1>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
                                         </div><!--Fim do cabeçalho do modal-->
                                         <div class="modal-body"><!--Corpo do modal-->
-                                            <img class="img-fluid" src="assets/imgs/escola.jpg" alt="">
+                                            <img class="img-fluid" src="assets/imgs/all4.jpg" alt="">
                                             <ul class="list-unstyled">
-                                                <li><span>Link: </span><a href="http://www.escolabemmequer.com/" target="_blank">www.escolabemmequer.com</a></li>
+                                                <li><span>Veja mais em: </span><a href="http://www.escolabemmequer.com/" target="_blank">www.escolabemmequer.com</a></li>
                                             </ul>
                                         </div><!--Fim do corpo do modal-->
                                     </div>
                                 </div>
                             </div><!--Fim modal-->
                             <div class="modal fade" id="hbr"><!--Modal-->
-                                <div class="modal-dialog modal-dialog-centered modal-lg"><!--Caixa de dialogo escura-->
+                                <div class="modal-dialog  modal-lg"><!--Caixa de dialogo escura-->
                                     <div class="modal-content"><!--Conteudo do modal-->
                                         <div class="modal-header"><!--Cabeçalho modal-->
-                                            <h1>Site da Escola Bem-Me-Quer</h1>
+                                            <h2  class="title text-center upper title-modal">HBR Engenharia</h1>
                                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">x</button>
                                         </div><!--Fim do cabeçalho do modal-->
                                         <div class="modal-body"><!--Corpo do modal-->
-                                            <img class="img-fluid" src="assets/imgs/escola.jpg" alt="">
+                                            <img class="img-fluid" src="assets/imgs/hbr.jpg" alt="">
                                             <ul class="list-unstyled">
-                                                <li><span>Link: </span><a href="http://www.escolabemmequer.com/" target="_blank">www.escolabemmequer.com</a></li>
+                                                <li><span>Veja mais em: </span><a href="http://www.hbr.eng.br/siteNovo/" target="_blank">www.hbr.eng.br/siteNovo/</a></li>
                                             </ul>
                                         </div><!--Fim do corpo do modal-->
                                     </div>
@@ -119,17 +122,17 @@
             </section><!--Fim seção porftolio-->
             <section id="contato"><!--Seção Contato-->
                 <div class="container">
-                    <h1 class="text-center">Contato</h1>
+                    <h1 class="title text-center upper">Contato</h1>
                     <article class="container">
                         <ul class="list-unstyled">
                             <li class="text-center">
-                                <a href="">
+                                <a href="mailto:hugocosta.oli@gmail.com">
                                     <i class="fas fa-at awesome"></i>
                                     hugocosta.oli@gmail.com
                                 </a>
                             </li>
                             <li class="text-center">
-                                <a href="">
+                                <a href="tel:+5581997115664">
                                     <i class="fas fa-mobile-alt awesome"></i>
                                     (81) 99711-5664
                                 </a>
