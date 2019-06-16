@@ -17,3 +17,7 @@ window.addEventListener('scroll',function(){
 });
 
 });
+
+$(document).ready(function () {
+  $('body').niceScroll();
+});

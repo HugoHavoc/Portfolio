@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, inicital-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
         <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="assets/css/all.min.css">
         <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
@@ -12,20 +12,21 @@
     </head>
     <body>
         <main><!--Main-->
-            <section id="inicio"><!--Conteudo Inicial-->
+            <section id="inicio" class="inicio"><!--Conteudo Inicial-->
                 <header class="cabecalho"><!--Cabeçalho-->
                     <div class="logo">
                         <a href="#inicio"><h1>Hugo Costa</h1></a>
                     </div>
                     <nav><!--Menu-->
+                        <label for="toggle">&#9776;</label>
                         <input type="checkbox" id="toggle">
-                        <label for="toogle">
+                        <div class="menu">
                             <ul>
-                                <li><a href="#sobre">Sobre</a></li>
-                                <li><a href="#portfolio">Portfólio</a></li>
-                                <li><a href="#contato">Contato</a></li>
+                                <li><a  href="#sobre">Sobre</a></li>
+                                <li><a  href="#portfolio">Portfólio</a></li>
+                                <li><a  href="#contato">Contato</a></li>
                             </ul>
-                        </label>
+                        </div>
                     </nav><!--Fim do menu-->
                 </header><!--Fim do cabeçalho-->
                 <video autoplay loop poster="assets/imgs/bgVideo.png"><!--Video do Início-->
@@ -39,7 +40,7 @@
                     <span></span>
                 </div>
             </section><!--Fim do início-->
-            <section id="sobre"><!--Seção Sobre-->
+            <section id="sobre" class="sobre"><!--Seção Sobre-->
                 <div class="container">
                     <h1 class="title text-center upper">Sobre</h1>
                     <article>
@@ -48,7 +49,7 @@
                     </article>
                 </div>
             </section><!--Fim seção sobre-->
-            <section id="portfolio"><!--Seção Portfolio-->
+            <section id="portfolio" class="portfolio"><!--Seção Portfolio-->
                 <div class="container-fluid">
                     <h1 id="pt" class="title text-center upper">Portfólio</h1>
                     <article>
@@ -120,7 +121,7 @@
                     </article>
                 </div>
             </section><!--Fim seção porftolio-->
-            <section id="contato"><!--Seção Contato-->
+            <section id="contato" class="contato"><!--Seção Contato-->
                 <div class="container">
                     <h1 class="title text-center upper">Contato</h1>
                     <article class="container">
@@ -157,5 +158,15 @@
         <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="assets/js/all.min.js"></script>
         <script type="text/javascript" src="assets/js/script.js"></script>
+
+        <script>
+            jQuery(document).ready(function($) {
+             $(".scroll").click(function(event){
+              event.preventDefault();
+              $('html,body').animate({scrollTop:$(this.hash).offset().top}, 1000);
+             });
+            });
+           </script>
+
     </body>
 </html>
